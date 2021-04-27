@@ -107,6 +107,9 @@ namespace View
                     Image = e._imageCollection[id],
                     Size = new Size(imageWidth, imageHeight),
                     Location = new Point(imageX, imageY),
+                    /// Set the name as ID
+                    /// Ghetto way of passing the id
+                    /// Messy, but it works!
                     Name = id
                 };
                 image.DoubleClick += new EventHandler(ImageClick);
