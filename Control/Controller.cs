@@ -85,11 +85,14 @@ namespace Control
         /// <summary>
         /// Code Snippet: Method to save the newly edited Image to file
         /// Modified from: https://docs.microsoft.com/en-us/dotnet/desktop/winforms/controls/how-to-save-files-using-the-savefiledialog-component?view=netframeworkdesktop-4.8
+        /// 
+        /// Would preffered to have put this in Model, but kept getting errors
         /// </summary>
         /// <param name="pImage"></param>
         private void Save(Image pImage)
         {
-            SaveFileDialog saveDialog = new SaveFileDialog{
+            SaveFileDialog saveDialog = new SaveFileDialog
+            {
                 Title = "Save your Image",
                 Filter = "Images (*.jpg, *.jpeg, *.jpe, *.jfif, *.png, *.bmp, *.gif) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png; *.bmp; *.gif|" + "All files (*.*)|*.*",
             };
@@ -122,5 +125,6 @@ namespace Control
             }
         }
         #endregion
+
     }
 }

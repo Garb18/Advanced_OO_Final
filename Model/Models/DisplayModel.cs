@@ -8,6 +8,7 @@ using FunctionLibrary.Interfaces;
 using FunctionLibrary.EventArguments;
 using FunctionLibrary.ImageFunctions;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace Model.Models
 {
